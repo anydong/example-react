@@ -26,7 +26,7 @@
     "build": "craco build",
     "test": "craco test --env=node",
     "eject": "react-scripts eject",
-    "format": "prettier --write --ignore-unknown src",
+    "format": "prettier --write --ignore-unknown",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
@@ -59,6 +59,6 @@
     "prettier": "2.4.1"
   },
   "lint-staged": {
-    "*": "prettier --write --ignore-unknown src"
+    "*": "prettier --write --ignore-unknown"
   }
 }
