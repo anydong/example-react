@@ -1,7 +1,13 @@
-import { hot } from '../../api/V2EXApi';
+import { membersShowByUsername, topicsHot } from '../../api/V2EXApi';
 
-test('hot', async () => {
-  await hot().then(response => {
+test('topicsHot', async () => {
+  await topicsHot().then(response => {
     console.log(response);
+  });
+});
+
+test('membersShow', async () => {
+  await membersShowByUsername('Livid').then(response => {
+    console.log(response.data);
   });
 });
