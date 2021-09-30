@@ -11,6 +11,7 @@ ReactDOM.render(
       <CssBaseline />
       <App />
     </React.Fragment>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
