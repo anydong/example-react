@@ -1,3 +1,4 @@
+import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -6,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Fragment>
+      <CssBaseline />
+      <App />
+    </React.Fragment>
   </React.StrictMode>,
   document.getElementById('root')
 );
